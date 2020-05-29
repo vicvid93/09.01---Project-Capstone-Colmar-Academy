@@ -1,7 +1,15 @@
+/* Universal styling */
+
 html{
     background-color: gray;
     font-size: 16px;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 
@@ -10,6 +18,11 @@ header {
     height: 64px;
     width: 100%;
     background-color: white;
+}
+
+header img {
+    height: 100%;
+    width: auto;
 }
 
 header .content {
@@ -99,11 +112,94 @@ header .mobile {
     }
 }
 
+/* Signup Section */
+.main-content .sign-up {
+    background-color: gainsboro;
+    display: flex;
+    padding: 32px 24px;
+
+}
+
+.sign-up .image-container {
+    width: 60%;
+}
+
+.sign-up .content-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 0 24px;
+}
+
+.sign-up h2 {
+    font-size: 4rem;
+    color: dimgray;
+    font-weight: bold;
+}
+
+.sign-up p {
+    font-size: 1.75rem;
+}
+
+.sign-up button{
+    background-color: dimgray;
+    color: white;
+    width: 80%;
+    font-size: 1.75rem;
+    padding: 1rem 0;
+    border: 0;
+}
+
+@media only screen and (max-width: 760px){
+    .main-content .sign-up {
+        background-color: gainsboro;
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+
+    .sign-up .image-container {
+        width: 100%;
+    }
+
+    .sign-up .content-container {
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        padding: 32px 16px;
+        margin: 0;
+    }
+
+    .sign-up h2 {
+        font-size: 4rem;
+        color: dimgray;
+        font-weight: bold;
+        padding-bottom: 32px;
+    }
+    
+    .sign-up p {
+        font-size: 1.75rem;
+        padding-bottom: 24px;
+    }
+    
+    .sign-up button{
+        background-color: dimgray;
+        color: white;
+        width: 100%;
+        font-size: 1.75rem;
+        padding: 1rem 0;
+        border: 0;
+    }
+}
+
 
 /* Footer */
 footer {
     background-color: white;
     height: 72px;
+    bottom: 0px;
 }
 
 footer .content {
