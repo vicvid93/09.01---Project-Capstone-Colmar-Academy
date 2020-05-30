@@ -112,19 +112,18 @@ header .mobile {
     }
 }
 
-/* Signup Section */
-.main-content .sign-up {
+/* Banner Section */
+.main-content .banner {
     background-color: gainsboro;
     display: flex;
     padding: 32px 24px;
-
 }
 
-.sign-up .image-container {
+.banner .image-container {
     width: 60%;
 }
 
-.sign-up .content-container {
+.banner .content-container {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -133,17 +132,17 @@ header .mobile {
     margin: 0 24px;
 }
 
-.sign-up h2 {
+.banner h2 {
     font-size: 4rem;
     color: dimgray;
     font-weight: bold;
 }
 
-.sign-up p {
+.banner p {
     font-size: 1.75rem;
 }
 
-.sign-up button{
+.banner button{
     background-color: dimgray;
     color: white;
     width: 80%;
@@ -153,18 +152,18 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px){
-    .main-content .sign-up {
+    .main-content .banner {
         background-color: gainsboro;
         display: block;
         padding: 0;
         width: 100%;
     }
 
-    .sign-up .image-container {
+    .banner .image-container {
         width: 100%;
     }
 
-    .sign-up .content-container {
+    .banner .content-container {
         box-sizing: border-box;
         width: 100%;
         display: block;
@@ -172,25 +171,157 @@ header .mobile {
         margin: 0;
     }
 
-    .sign-up h2 {
+    .banner h2 {
         font-size: 4rem;
         color: dimgray;
         font-weight: bold;
         padding-bottom: 32px;
     }
     
-    .sign-up p {
+    .banner p {
         font-size: 1.75rem;
         padding-bottom: 24px;
     }
     
-    .sign-up button{
+    .banner button{
         background-color: dimgray;
         color: white;
         width: 100%;
         font-size: 1.75rem;
         padding: 1rem 0;
         border: 0;
+    }
+}
+
+/* Information Section */
+.main-content .information {
+    background-color: white;
+    display: flex;
+    padding: 32px 0px;
+}
+
+.information .information-main {
+    padding: 0 24px;
+    display: block;
+    width: 60%;
+}
+
+.information-main .image-container {
+    width: 100%;
+}
+
+.information-main h2 {
+    font-size: 4rem;
+    color: dimgray;
+    font-weight: bold;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.information-main p {
+    font-weight: 300;
+    padding-bottom: 16px;
+}
+
+
+.information-side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    width: 40%;
+}
+
+.information-side h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.information-side p {
+    font-weight: 300;
+    padding: 8px 0px;
+}
+
+
+.information-side a {
+    color: lightblue;
+}
+
+.information-side .information-container {
+    display: flex;
+    box-sizing: border-box;
+    padding: 16px;
+    width: 100%;
+    border: lightgray solid 1px;
+    height: 33%;
+}
+
+.information-container .image-container {
+    width: 35%;
+    height: auto;
+}
+
+.information-container .content-container {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.content-container .content-center {
+    padding-left: 10px;
+}
+
+.information .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    .information .desktop {
+        display: none;
+    }
+
+    .information .mobile {
+        display: flex;
+    }
+
+    .main-content .information {
+        background-color: white;
+        display: flex;
+        padding: 16px 0px;
+    }
+    
+    .information-side {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .information-side .information-container {
+        display: block;
+        box-sizing: border-box;
+        padding: 16px;
+        width: 100%;
+        border: lightgray solid 0px;
+    }
+
+    .information-container .image-container {
+        width: 100%;
+        height: auto;
+    }
+    
+    .information-container .content-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .content-container .content-center {
+        padding-top: 32px;
+        padding-left: 16px;
+        width: 100%;
     }
 }
 
